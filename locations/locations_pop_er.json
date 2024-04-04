@@ -23,12 +23,6 @@
         ]
       },
       {
-        "name": "C",
-        "access_rules": [
-          "@A"
-        ]
-      },
-      {
         "name": "D",
         "access_rules": [
           "@E",
@@ -41,7 +35,7 @@
         "name": "E",
         "access_rules": [
           //"@X", //uncomment this for oddness
-          "@C,missing_item",
+          "@A,missing_item",
           "@D"
         ],
         "map_locations": [{"map": "eastern_vault", "x": 600, "y": 200}],
