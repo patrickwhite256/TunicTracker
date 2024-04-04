@@ -6,203 +6,46 @@
     "chest_opened_img": "images/chest_open.png",
     "children": [
       {
-        "name": "East Overworld",
+        "name": "Start"
+      },
+      {
+        "name": "A",
         "access_rules": [
-          "@Forest Belltower Main",
-          "@Fortress Exterior from Overworld"
+          "@B",
+          "@D",
+          "@Start"
         ]
       },
       {
-        "name": "Overworld Spawn Portal",
+        "name": "B",
         "access_rules": [
-          "pray"
+          "@A"
         ]
       },
       {
-        "name": "Forest Belltower Upper",
+        "name": "C",
         "access_rules": [
-          "@Forest Boss Room"
+          "@A"
         ]
       },
       {
-        "name": "Forest Belltower Main",
+        "name": "D",
         "access_rules": [
-          "@Forest Belltower Upper"
-        ]
-      },
-      {
-        "name": "East Forest",
-        "access_rules": [
-          "@East Forest Portal",
-          "@Forest Belltower Lower",
-          "@Guard House 1 East"
-        ]
-      },
-      {
-        "name": "East Forest Portal",
-        "access_rules": [
-          "@Far Shore to East Forest Region"
-        ]
-      },
-      {
-        "name": "Guard House 1 East",
-        "access_rules": [
-          "@East Forest"
-        ]
-      },
-      {
-        "name": "Forest Boss Room",
-        "access_rules": [
-          "@Forest Belltower Upper",
-          "@Guard House 1 East"
-        ]
-      },
-      {
-        "name": "Fortress Exterior from East Forest",
-        "access_rules": [
-          "@Forest Belltower Main"
-        ]
-      },
-      {
-        "name": "Fortress Exterior from Overworld",
-        "access_rules": [
-          "@East Overworld",
-          "@Fortress Courtyard,dash",
-          "@Fortress Exterior from East Forest,dash",
-          "@Fortress Exterior from East Forest,orb"
-        ]
-      },
-      {
-        "name": "Fortress Exterior near cave",
-        "access_rules": [
-          "@Beneath the Vault Entry,ladder_to_beneath_the_vault",
-          "@Fortress Exterior from Overworld,dash",
-          "@Fortress Exterior from Overworld,pray"
-        ]
-      },
-      {
-        "name": "Beneath the Vault Entry",
-        "access_rules": [
-          "@Beneath the Vault Ladder Exit",
-          "@Fortress Exterior near cave,ladder_to_beneath_the_vault"
-        ]
-      },
-      {
-        "name": "Fortress Courtyard",
-        "access_rules": [
-          "@Eastern Vault Fortress",
-          "@Fortress Courtyard Upper",
-          "@Fortress Exterior from Overworld,dagger,glitches,icerod,orb,staff",
-          "@Fortress Exterior from Overworld,dash",
-          "@Fortress Grave Path"
+          "@E",
+          "@A"
         ],
         "map_locations": [{"map": "eastern_vault", "x": 600, "y": 715}],
         "sections": [{"name": "can u get here", "item_count": 1}]
       },
       {
-        "name": "Fortress Courtyard Upper",
+        "name": "E",
         "access_rules": [
-          "@Fortress Courtyard,dagger,glitches,icerod,orb,staff"
-        ]
-      },
-      {
-        "name": "Beneath the Vault Ladder Exit",
-        "access_rules": [
-          "@Beneath the Vault Entry",
-          "@Beneath the Vault Front,ladder_to_beneath_the_vault"
-        ]
-      },
-      {
-        "name": "Beneath the Vault Front",
-        "access_rules": [
-          "@Beneath the Vault Back",
-          "@Beneath the Vault Ladder Exit,ladder_to_beneath_the_vault"
-        ]
-      },
-      {
-        "name": "Beneath the Vault Back",
-        "access_rules": [
-          "@Beneath the Vault Front,[light]",
-          "@Eastern Vault Fortress"
-        ]
-      },
-      {
-        "name": "Eastern Vault Fortress",
-        "access_rules": [
-          "@Beneath the Vault Back",
-          "@Fortress Courtyard",
-          "@Eastern Vault Fortress Gold Door,dagger,glitches,icerod,orb,staff",
-          //"@Fortress East Shortcut Lower", //uncomment this for wackiness
-          "@Fortress Exterior from East Forest,glitches,stick",
-          "@Fortress Exterior from East Forest,glitches,sword",
-          "@Fortress Exterior from Overworld,glitches,stick",
-          "@Fortress Exterior from Overworld,glitches,sword",
-          "@Fortress Exterior near cave,glitches,ladder_to_beneath_the_vault,stick",
-          "@Fortress Exterior near cave,glitches,ladder_to_beneath_the_vault,sword"
+          //"@X", //uncomment this for oddness
+          "@C,missing_item",
+          "@D"
         ],
         "map_locations": [{"map": "eastern_vault", "x": 600, "y": 200}],
         "sections": [{"name": "can u get here", "item_count": 1}]
-      },
-      {
-        "name": "Eastern Vault Fortress Gold Door",
-        "access_rules": [
-          "@Eastern Vault Fortress,dagger,glitches,orb",
-          "@Eastern Vault Fortress,pray",
-          "@Fortress Arena"
-        ]
-      },
-      {
-        "name": "Fortress Grave Path",
-        "access_rules": [
-          "@Fortress Courtyard",
-          "@Fortress Exterior from East Forest,glitches,stick",
-          "@Fortress Exterior from East Forest,glitches,sword",
-          "@Fortress Exterior from Overworld,glitches,stick",
-          "@Fortress Exterior from Overworld,glitches,sword",
-          "@Fortress Exterior near cave,glitches,ladder_to_beneath_the_vault,stick",
-          "@Fortress Exterior near cave,glitches,ladder_to_beneath_the_vault,sword"
-        ]
-      },
-      {
-        "name": "Fortress Arena",
-        "access_rules": [
-          "@Eastern Vault Fortress Gold Door"
-        ]
-      },
-      {
-        "name": "Fortress Arena Portal",
-        "access_rules": [
-          "@Fortress Arena,pray"
-        ]
-      },
-      {
-        "name": "Far Shore",
-        "access_rules": [
-          "@Far Shore to East Forest Region,dash",
-          "@Far Shore to Fortress Region",
-          "@Far Shore to Spawn Region,dash"
-        ]
-      },
-      {
-        "name": "Far Shore to Spawn Region",
-        "access_rules": [
-          "@Far Shore,dash",
-          "@Overworld Spawn Portal"
-        ]
-      },
-      {
-        "name": "Far Shore to East Forest Region",
-        "access_rules": [
-          "@East Forest Portal",
-          "@Far Shore,dash"
-        ]
-      },
-      {
-        "name": "Far Shore to Fortress Region",
-        "access_rules": [
-          "@Far Shore,pray",
-          "@Fortress Arena Portal"
-        ]
       }
     ]
   }
