@@ -1681,6 +1681,8 @@
           "@Overworld Beach,glitches,ladder_to_ruined_atoll,ladders_to_west_bell,sword",
           "@Overworld to West Garden from Furnace"
         ],
+        "map_locations": [{"map":"overworld", "x": 325, "y": 700}],
+        "sections": [{"name": "West Furnace Access", "item_count": 1}],
         "children": []
       },
       {
